@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <h2>STOPWATCH</h2>
+        
+        <div class="time-display" id="time-display">00:00:00:00</div>
+        <div class="controls">
+          <button id="start-btn">Start</button>
+          <button id="stop-btn">Stop</button>
+          <button id="lap-btn">Lap</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+
+        <div id="lap-body-wrapper">
+          <table id="lap-table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Lap - Time</th>
+                <th>Total - Time</th>
+              </tr>
+            </thead>
+            <tbody id="lap-body"></tbody>
+          </table>
+        </div>
+
+        
+        
+      </div>
+      <script src="script.js"></script>
+</body>
 </html>
